@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Photo album</title>
+    <style>
+      .photo-frame {
+        width: 300px;
+        height: 300px;
+        border: 2px solid salmon;
+        border-radius: 3px;
+        position: relative;
+        margin: 10px;
+        overflow: hidden;
+      }
+      .photo img {
+        width: 100%;
+        border-radius: 5px;
+      }
+      .photo-detail {
+        display: none;
+        position: absolute;
+        width: 300px;
+        top: 0px;
+      }
+      .photo-frame:hover .photo-detail {
+        display: block;
+        background-color: rgba(255, 232, 212, 0.233);
+      }
+      .photo-album {
+        height: 500px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+      }
+      .photo-frame:hover .photo {
+        transform: scale(1.4) rotate(5deg);
+        transition: transform 4s ease-in-out;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>my photo album with lion king</h1>
+    <section>
+      <div class="photo-album">
+        <div class="photo-frame">
+          <div class="photo"><img src="media/unnamed.png" alt="" /></div>
+          <div class="photo-detail">
+            <h3>lion king</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Quibusdam maxime vitae, ex expedita neque cupiditate eaque et aut
+              impedit repellat ea cumque id obcaecati ipsam beatae minima quia
+              itaque velit!
+            </p>
+          </div>
+        </div>
+        <div class="photo-frame">
+          <div class="photo"><img src="media/unnamed.png" alt="" /></div>
+          <div class="photo-detail">
+            <h3>lion king</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Quibusdam maxime vitae, ex expedita neque cupiditate eaque et aut
+              impedit repellat ea cumque id obcaecati ipsam beatae minima quia
+              itaque velit!
+            </p>
+          </div>
+        </div>
+        <div class="photo-frame">
+          <div class="photo"><img src="media/unnamed.png" alt="" /></div>
+          <div class="photo-detail">
+            <h3>lion king</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Quibusdam maxime vitae, ex expedita neque cupiditate eaque et aut
+              impedit repellat ea cumque id obcaecati ipsam beatae minima quia
+              itaque velit!
+            </p>
+          </div>
+        </div>
+        <div class="photo-frame">
+          <div class="photo"><img src="media/unnamed.png" alt="" /></div>
+          <div class="photo-detail">
+            <h3>lion king</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Quibusdam maxime vitae, ex expedita neque cupiditate eaque et aut
+              impedit repellat ea cumque id obcaecati ipsam beatae minima quia
+              itaque velit!
+            </p>
+          </div>
+        </div>
+        <div class="photo-frame">
+          <div class="photo"><img src="media/unnamed.png" alt="" /></div>
+          <div class="photo-detail">
+            <h3>lion king</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Quibusdam maxime vitae, ex expedita neque cupiditate eaque et aut
+              impedit repellat ea cumque id obcaecati ipsam beatae minima quia
+              itaque velit!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
